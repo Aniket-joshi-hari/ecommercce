@@ -16,7 +16,7 @@ class Banner extends Component {
             rows:1,
           };
         return (
-            <div style={{marginTop:'20px'}}>
+            <div style={{marginTop:'150px',width:"95%",marginRight:'2.5%',marginLeft:'2.5%'}}>
                 <Slider {...settings}>
           <div>
            <img src={img3} height="450" width="100%" /> 
