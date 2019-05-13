@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+/* header css */
+
+.nav-wrapper{
+background :#fff;
+margin:0px;
+padding:0px;
+overflow: hidden;
+width:100%;
+box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+z-index:900;
+}
+
+.logo{
+  float:left;
+}
+
+li{
+  list-style-type:none;
+  display: inline-block;
+}
+.navItem a{
+  color:#000;
+  text-decoration: none;
+}
+
+.navItem{
+  float:left;
+  margin-top:8px;
+}
+.navItem li a{
+  padding:10px;
+  font-size: 17px;
+  font-weight: 500;
+  color:rgba(40,44,63,0.9);
+}
+.searchBar{
+  margin-top:10px;
+  float: right;
+  padding-right:5px;
+}
+.searchBar input[type="text"]{
+  padding:5px;
+  border-radius:5px;
+  border:none;
+  width:220px;
+}
+.searchBar button i{
+  padding:5px;
+  color:rgba(0,0,0,0.6);
+}
+.searchContainer{
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:3px;
+  float:left;
+  margin-top:8px;
+  margin-right:2px;
+}
+.searchBar button{
+  background:#fff;
+  border:none;
+
+}
+.rigthSide{
+  float:right;
+  margin-right:2px;
+}
+.lastNav{
+  display:flex;
+  margin-top:3px;
+  width:150px;
+}
+.lastNav i{
+  font-size:22px;
+}
+.both{
+  padding:8px;
+
+}
+/* end of header */
