@@ -21,21 +21,21 @@ const header = () => {
             <div className="rightSide">
             <div className="searchBar">
             <div className="searchContainer">
-            <button><i class="fas fa-search"></i></button>
+            <button><i className="fas fa-search"></i></button>
             <input type="text" placeholder="search for product brands and more" ></input>
             
             </div>
             <div className="lastNav">
-            <div class="both">
-            <i class="fas fa-user" style={{color:'#00acee'}}></i>
+            <div className="both">
+            <i className="fas fa-user" style={{color:'#00acee'}}></i>
             <p style={{fontSize:'12px'}}>Profile</p>
             </div>
-            <div class="both">
-            <i class="far fa-bookmark" style={{color:'#00acee'}}></i>
+            <div className="both">
+            <i className="far fa-bookmark" style={{color:'#00acee'}}></i>
             <p style={{fontSize:'12px'}}>Wishlist</p>
             </div>
-            <div class="both">
-            <i class="fas fa-shopping-bag" style={{color:'#00acee'}}></i>
+            <div className="both">
+            <i className="fas fa-shopping-bag" style={{color:'#00acee'}}></i>
             <p style={{fontSize:'12px'}}>Bag</p>
             </div>
             </div>

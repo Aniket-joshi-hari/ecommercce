@@ -2,7 +2,9 @@
   text-align: center;
 }
 /* header css */
-
+body{
+overflow: hidden;
+}
 .nav-wrapper{
 background :#fff;
 margin:0px;
@@ -11,6 +13,7 @@ overflow: hidden;
 width:100%;
 box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 z-index:900;
+position: fix;
 }
 
 .logo{
