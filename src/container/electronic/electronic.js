@@ -45,7 +45,7 @@ class Electronic extends Component {
         return (
             <div className="elctronicWrapper">
             <p className="eHead">New Books Collection</p>
-            <div className="firstSection" style={{marginTop:'5px',width:'95%',marginLeft:'2.5%',marginRight:'2.5%'}}>
+            <div className="firstSection" style={{marginTop:'5px',width:'88%',marginLeft:'6%',marginRight:'2.5%'}}>
                 <Slider {...settings}>
           <div >
               <div className="itemContainer">
