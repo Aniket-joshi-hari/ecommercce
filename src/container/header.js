@@ -37,6 +37,7 @@ const header = () => {
             <div className="both">
             <i className="fas fa-shopping-bag" style={{color:'#00acee'}}></i>
             <p style={{fontSize:'12px'}}>Bag</p>
+            
             </div>
             </div>
             </div>
