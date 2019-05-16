@@ -35,8 +35,8 @@ const header = () => {
             <p style={{fontSize:'12px'}}>Wishlist</p>
             </div>
             <div className="both">
-            <i className="fas fa-shopping-bag" style={{color:'#00acee'}}></i>
-            <p style={{fontSize:'12px'}}>Bag</p>
+            <i  class="fas fa-shopping-cart" style={{color:'#00acee'}}></i>
+            <p style={{fontSize:'12px'}}>Cart</p>
             <i></i>
             </div>
             </div>
