@@ -110,7 +110,7 @@ color:#000 !important;
   margin-top:40px;
   padding:0px;
   padding-top:10px;
-  background:#eee;
+  background:#fff;
 
 }
 .eHead{
@@ -277,4 +277,11 @@ table#cart tbody td:before {
 table#cart tfoot td{display:block; }
 table#cart tfoot td .btn{display:block;}
 
+}
+
+
+/* women section start */
+.women{
+  margin-top:30px;
+  height:200px;
 }

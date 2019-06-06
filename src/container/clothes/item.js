@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
 const Item = (props) => {
+    console.log(props)
         return (
            
+           
                 <div className="col-sm-3">
+                <h2>{props.id}</h2>
                     <div className="thumb-wrapper">
                         <div className="img-box">
+                        
                             <img src={props.url} className="img-responsive img-fluid" alt="" />
                         </div>
                         <div className="thumb-content">
@@ -20,7 +24,7 @@ const Item = (props) => {
                                     <li className="list-inline-item"><i className='fa fa-star-half-o'></i></li>
                                 </ul>
                             </div>
-                            <a href="#" className="btn btn-primary" onClick={props.cart}>{props.cart}</a>
+                            <a href="#" className="btn btn-primary" onClick={props.addToCart}>{props.cart}</a>
                         </div>						
                     </div>
                 </div>
