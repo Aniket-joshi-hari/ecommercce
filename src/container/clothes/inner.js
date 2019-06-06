@@ -85,9 +85,12 @@ class  Inner extends Component{
 		}
 			}
 			
-			addToCart =(e,id,name,cutprice,price,url,inCart)=>{
-				inCart=true;
-				console.log(id,name,price,cutprice)
+			addToCart =(e,index,id,name,cutprice,price,url,inCart)=>{
+				 const selectedItem=[...this.state.shopping];
+				 console.log(selectedItem[index].inCart)
+				 selectedItem[index].inCart=true;
+
+				console.log(selectedItem.inCart)
 			 const cart =	[...this.state.cart];
 				let cartItem={
 					id:id,
@@ -95,28 +98,31 @@ class  Inner extends Component{
 					cutprice:price,
 					price:cutprice,
 					imageurl:url,
-					inCart:inCart
+					inCart:inCart,
 				
 				};
+				
 				cart.push(cartItem);
 
 				this.setState({
+					shopping:selectedItem,
 					cart:cart
 				})
-				console.log(this.state.cart);
+			
 				
 			}
 	
 	 render(){
-		console.log(this.state.cart);
+		console.log(this.state.shopping);
 		 console.log('in render',this.state.value);
-		 let neArr =  [...this.state.shopping].slice(this.state.value,this.state.value+4)
+			let shopping=[...this.state.shopping];
+		 let neArr =  shopping.slice(this.state.value,this.state.value+4)
 		console.log(neArr)
 		 
 		 let item = neArr.map((element,index)=>{
 			
 			return (
-				<Item name={element.Pname} key={index} price={element.price} cut={element.cutprice} url={element.url} cart={element.button} addToCart={(e)=>this.addToCart(e,element.id,element.Pname,element.cutprice,element.price,element.url,element.inCart)}/>
+				<Item inCart={element.inCart} name={element.Pname} key={index} price={element.price} cut={element.cutprice} url={element.url} cart={element.button} addToCart={(e)=>this.addToCart(e,index,element.id,element.Pname,element.cutprice,element.price,element.url,element.inCart)}/>
 			)
 			
 		 }
